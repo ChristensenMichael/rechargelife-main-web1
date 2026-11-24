@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========================================== -->
+    <!-- 1. PRIMÆRE META-TAGS (Søgemaskiner)        -->
+    <!-- ========================================== -->
+    <title>Hyperbar Iltbehandling i Hillerød (2.0 ATA) | RechargeLife</title>
+    <meta name="description" content="Oplev klinisk hyperbar iltbehandling (HBOT) ved 2.0 ATA i CE-mærket og PED-godkendt trykkammer hos RechargeLife i Hillerød. Hurtig opstart, lægefaglig tilknytning og certificeret drift.">
+
+    <!-- Canonical tag -->
+    <link rel="canonical" href="https://rechargelife.dk/">
+
+    <!-- ========================================== -->
+    <!-- 2. OPEN GRAPH META-TAGS (LinkedIn/Facebook)-->
+    <!-- ========================================== -->
+    <meta property="og:title" content="Hyperbar Iltbehandling i Hillerød (2.0 ATA) | RechargeLife">
+    <meta property="og:description" content="Klinisk hyperbar iltbehandling (HBOT) ved 2.0 ATA i Hillerød med certificeret drift, lægefaglig screening og mulighed for hjemmeleje via RecoveryExpressen.">
+    <meta property="og:url" content="https://rechargelife.dk/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RechargeLife - beyond living">
+    <meta property="og:image" content="https://rechargelife.dk/pictures/multikammer.png">
+
+    <!-- ========================================== -->
+    <!-- 3. JSON-LD SCHEMA MARKUP (Google Rich Snippets) -->
+    <!-- ========================================== -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "name": "RechargeLife",
+              "legalName": "Re Charge Life ApS",
+              "url": "https://rechargelife.dk/",
+              "logo": "https://rechargelife.dk/pictures/Recharge%20Life_Large_Transparent_Variant%201.png",
+              "taxID": "45890589",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Baldersvej 9",
+                "addressLocality": "Hillerød",
+                "postalCode": "3400",
+                "addressCountry": "DK"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+4531443772",
+                "email": "kontakt@rechargelife.dk",
+                "contactType": "Kundeservice"
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Hvorfor er et tryk på 2.0 ATA i et hårdt, CE- og PED-godkendt kammer vigtigt?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ved 2.0 ATA opløses en markant større mængde ilt direkte i blodplasmaet, så ilten lettere kan nå væv med nedsat cirkulation. Hos RechargeLife foregår behandlingen i et CE-mærket og PED-godkendt anlæg under overvågning af certificeret personale."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Er der lægefaglig tilknytning og screening hos RechargeLife?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der er lægefaglig tilknytning og mulighed for klinisk screening forud for et forløb, så eventuelle kontraindikationer afklares, og forløbet tilpasses sikkert."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Hvordan forbereder jeg mig til mit første besøg i klinikken?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kom gerne velhydreret og 10 minutter før din aftalte tid, undgå parfume og stærke dufte samt store måltider og kaffe lige før sessionen. Vi stiller antistatisk klinikbeklædning til rådighed og gennemgår trykudligning samt dykkersignaler før start."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rl-darkblue': '#013F58',
+                        'rl-lightblue': '#B6CCD7',
+                        'rl-taupe': '#94857B',
+                        'rl-lightbg': '#E0DFD8',
+                        'rl-black': '#151F28',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Belleza', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hover-underline-animation { position: relative; }
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: #ffffff;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Klientudtalelser slider */
+        .quote-slide {
+            grid-area: 1 / 1;
+            opacity: 0;
+            visibility: hidden;
+            animation: quoteCycle 35s infinite;
+        }
+        .quote-slide-1 { animation-delay: 0s; }
+        .quote-slide-2 { animation-delay: 5s; }
+        .quote-slide-3 { animation-delay: 10s; }
+        .quote-slide-4 { animation-delay: 15s; }
+        .quote-slide-5 { animation-delay: 20s; }
+        .quote-slide-6 { animation-delay: 25s; }
+        .quote-slide-7 { animation-delay: 30s; }
+
+        .quote-slider:hover .quote-slide {
+            animation-play-state: paused;
+        }
+
+        @keyframes quoteCycle {
+            0% { opacity: 0; visibility: hidden; }
+            1.5%, 12.8% { opacity: 1; visibility: visible; }
+            14.3%, 100% { opacity: 0; visibility: hidden; }
+        }
+    </style>
+
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-N9W74J6F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    </script>
+</head>
+<body class="bg-[#FAF9F6] text-rl-black font-sans antialiased">
+
+    <!-- ======= HEADER / NAVIGATION (5 hovedpunkter + Book tid) ======= -->
+    <header class="bg-rl-darkblue shadow-md sticky top-0 z-50 border-b border-rl-darkblue/50 h-20 flex items-center">
+        <nav class="container mx-auto px-6 flex items-center justify-between w-full">
+            <a href="index.html" class="flex items-center group py-2">
+                <img src="pictures/Recharge%20Life_Large_Transparent_Variant%201.png" alt="RechargeLife Logo" class="h-14 md:h-16 object-contain object-left transition-transform duration-300 group-hover:scale-105">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 font-medium text-sm text-white">
+                <a href="index.html" class="hover-underline-animation">HBOT &amp; Klinikken</a>
+                <a href="hvad-er-hbot.html" class="hover-underline-animation">Hvad er HBOT?</a>
+
+                <div class="group relative py-2">
+                    <a href="behandlinger.html" class="flex items-center gap-1 hover-underline-animation">
+                        Behandlingsområder
+                        <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <div class="bg-white border border-rl-lightbg rounded-xl shadow-xl w-72 py-2 overflow-hidden flex flex-col">
+                            <a href="behandlinger.html#kirurgi-saarheling" class="px-5 py-3 text-rl-darkblue hover:bg-rl-lightbg/50 transition border-b border-rl-lightbg/30">Kirurgi &amp; Sårheling</a>
+                            <a href="behandlinger.html#hjerne-neuro" class="px-5 py-3 text-rl-darkblue hover:bg-rl-lightbg/50 transition border-b border-rl-lightbg/30">Hjerne &amp; Neuro</a>
+                            <a href="behandlinger.html#smerter-inflammation" class="px-5 py-3 text-rl-darkblue hover:bg-rl-lightbg/50 transition border-b border-rl-lightbg/30">Smerter, Nerve &amp; Inflammation</a>
+                            <a href="behandlinger.html#longevity-energi" class="px-5 py-3 text-rl-darkblue hover:bg-rl-lightbg/50 transition border-b border-rl-lightbg/30">Longevity, Energi &amp; Biohacking</a>
+                            <a href="behandlinger.html#sport-restitution" class="px-5 py-3 text-rl-darkblue hover:bg-rl-lightbg/50 transition">Sport &amp; Restitution</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://recoveryexpressen.dk" target="_blank" rel="noopener noreferrer" class="hover-underline-animation">Lej hjemmekammer ↗</a>
+                <a href="om-os.html" class="hover-underline-animation">Om os &amp; Kontakt</a>
+                <a href="https://system.easypractice.net/book/rechargelife" target="_blank" rel="noopener noreferrer" class="bg-white text-rl-darkblue font-semibold px-4 py-2 rounded-full hover:bg-rl-lightbg transition">
+                    Book tid
+                </a>
+            </div>
+
+            <div class="flex items-center gap-3 text-sm">
+                <a href="https://b2b.rechargelife.dk" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-block text-white/80 hover:text-white text-xs uppercase tracking-wider border border-white/25 rounded-full px-3 py-1 transition">
+                    Erhverv (B2B) ↗
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none ml-1" aria-label="Åbn menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-rl-darkblue border-t border-white/10 lg:hidden shadow-xl">
+            <div class="flex flex-col px-6 py-4 space-y-2 text-white text-base">
+                <a href="index.html" class="block py-2.5 border-b border-white/10">HBOT &amp; Klinikken</a>
+                <a href="hvad-er-hbot.html" class="block py-2.5 border-b border-white/10">Hvad er HBOT?</a>
+                <a href="behandlinger.html" class="block py-2.5 border-b border-white/10">Behandlingsområder</a>
+                <a href="https://recoveryexpressen.dk" target="_blank" rel="noopener noreferrer" class="block py-2.5 border-b border-white/10">Lej hjemmekammer ↗</a>
+                <a href="priser.html" class="block py-2.5 border-b border-white/10">Priser &amp; Booking</a>
+                <a href="om-os.html" class="block py-2.5 border-b border-white/10">Om os &amp; Kontakt</a>
+                <a href="https://b2b.rechargelife.dk" target="_blank" rel="noopener noreferrer" class="block py-2.5 text-rl-lightblue">Erhverv (B2B) ↗</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======= KLIENTUDTALELSER (TOP-BÅND) ======= -->
+    <div class="bg-rl-darkblue/95 border-t border-white/10 px-4 py-3 text-rl-lightbg">
+        <div class="container mx-auto max-w-5xl quote-slider grid items-center min-h-[44px]">
+            <p class="quote-slide quote-slide-1 text-center text-xs sm:text-sm italic">
+                &ldquo;Min hovedpine forsvandt umiddelbart efter et dyk... Jeg har følt mig meget tryg og godt vejledt.&rdquo;
+                <span class="not-italic font-semibold ml-2 uppercase tracking-wide">- John, hjernerystelse</span>
+            </p>
+            <p class="quote-slide quote-slide-2 text-center text-xs sm:text-sm italic">
+                &ldquo;Efter 10 behandlinger er antallet af migræner faldet med 80% og smertegraden med 60%.&rdquo;
+                <span class="not-italic font-semibold ml-2 uppercase tracking-wide">- Rikkekatrine, migræne</span>
+            </p>
+            <p class="quote-slide quote-slide-3 text-center text-xs sm:text-sm italic">
+                &ldquo;Jeg har oplevet markant øget energi, større fokus og klarhed. Mine hedeture er forsvundet.&rdquo;
+                <span class="not-italic font-semibold ml-2 uppercase tracking-wide">- Mia Katrine, fatigue</span>
+            </p>
+            <p class="quote-slide quote-slide-4 text-center text-xs sm:text-sm italic">
+                &ldquo;Super og professionel behandling. Alting er helt gennemtænkt... Michael er velvidende.&rdquo;
+                <span class="not-italic font-semibold ml-2 uppercase tracking-wide">- Christoffer, optimering</span>
+            </p>
+            <p class="quote-slide quote-slide-5 text-center text-xs sm:text-sm italic">
+                &ldquo;Fik HBOT før hofteoperation. Mine åreknuder blev mindre og helingen gik hurtigere.&rdquo;
+                <span class="not-italic font-semibold ml-2 uppercase tracking-wide">- Laila Wik, restitution</span>
+            </p>
+            <p class="quote-slide quote-slide-6 text-center text-xs sm:text-sm italic">
+                &ldquo;Oplevede mere energi til at klare hverdagen efter en stresset flytning. Fik mere livsglæde og gå på mod.&rdquo;
+                <span class="not-italic font-semibold ml-2 uppercase tracking-wide">- Edith Skarv, restitution</span>
+            </p>
+            <p class="quote-slide quote-slide-7 text-center text-xs sm:text-sm italic">
+                &ldquo;Jeg havde alvorlige senfølger efter strålebehandling, men efter mit forløb i trykkammer er mine nervesmerter forsvundet, og jeg har fået min bevægelsesfrihed tilbage.&rdquo;
+                <span class="not-italic font-semibold ml-2 uppercase tracking-wide">- Henrik, stråleskader</span>
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <!-- ======= HERO SECTION ======= -->
+        <section class="relative flex items-center min-h-[78vh] py-20 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="pictures/multikammer.png" alt="Klinisk trykkammer hos RechargeLife i Hillerød" class="h-full w-full object-cover object-center">
+                <div class="absolute inset-0 bg-rl-darkblue/75 mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-rl-darkblue/95 via-rl-darkblue/80 to-transparent"></div>
+            </div>
+
+            <div class="container relative z-10 mx-auto px-6">
+                <div class="max-w-3xl space-y-6">
+                    <span class="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-white bg-white/20 px-3.5 py-1.5 rounded-full backdrop-blur-md">
+                        RechargeLife Klinik · Baldersvej 9, Hillerød
+                    </span>
+                    <h1 class="font-serif text-4xl md:text-6xl leading-[1.1] text-white">
+                        Hyperbar iltbehandling (HBOT) ved 2.0 ATA i Hillerød
+                    </h1>
+                    <p class="text-white/90 text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+                        Få adgang til klinisk hyperbar iltbehandling i et CE-mærket og PED-godkendt trykkammer ved 2.0 ATA – udført af certificeret personale med lægefaglig tilknytning og hurtig opstart fra dag til dag.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="https://system.easypractice.net/book/rechargelife?service=277207" target="_blank" rel="noopener noreferrer" class="bg-white text-rl-darkblue font-semibold px-7 py-4 rounded-full hover:bg-rl-lightbg transition shadow-lg">
+                            Book prøvetur (200 kr.)
+                        </a>
+                        <a href="priser.html" class="bg-transparent border border-white/70 text-white font-medium px-7 py-4 rounded-full hover:bg-white/10 transition">
+                            Se priser &amp; klippekort
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= HURTIG ADGANG & KLINISK RAMME ======= -->
+        <section class="py-20 bg-white border-t border-rl-lightbg">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="max-w-3xl mb-12">
+                    <span class="text-xs font-semibold uppercase tracking-[0.2em] text-rl-taupe">Klinik i Nordsjælland</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-rl-darkblue mt-2">
+                        Specialiseret trykkammerbehandling helt uden om ventelisten
+                    </h2>
+                    <p class="text-rl-black/80 mt-4 text-base md:text-lg leading-relaxed">
+                        Hos RechargeLife møder du høj klinisk ekspertise og trygge rammer. Med hyperbar iltbehandling ved 2.0 ATA arbejder vi målrettet på cellulært niveau for at dæmpe inflammation, understøtte vævsheling og genskabe energi – med tider fra dag til dag og lægefaglig tilknytning ved behov.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-rl-lightbg/30 p-7 rounded-3xl border border-rl-lightbg">
+                        <h3 class="font-serif text-2xl text-rl-darkblue mb-3">1. Klinisk screening (efter behov)</h3>
+                        <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                            Tilrettelagt i samarbejde med lægefaglige specialister for klienter med specifikke medicinske tilstande eller post-operative forløb for at afklare eventuelle kontraindikationer.
+                        </p>
+                        <a href="priser.html" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe transition">Læs mere om screening &rarr;</a>
+                    </div>
+
+                    <div class="bg-rl-lightbg/30 p-7 rounded-3xl border border-rl-lightbg">
+                        <h3 class="font-serif text-2xl text-rl-darkblue mb-3">2. 60, 90 eller 105 min. sessioner</h3>
+                        <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                            Vælg mellem 60 eller 90 min. HBOT – eller vores Signatur Protokol (105 min.) med 15 min. rødlys, 60 min. HBOT og 30 min. molekylær hydrogen.
+                        </p>
+                        <a href="priser.html" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe transition">Se priser og klippekort &rarr;</a>
+                    </div>
+
+                    <div class="bg-rl-lightbg/30 p-7 rounded-3xl border border-rl-lightbg">
+                        <h3 class="font-serif text-2xl text-rl-darkblue mb-3">3. Hjemmeleje via RecoveryExpressen</h3>
+                        <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                            Ønsker du at fortsætte derhjemme, tilbyder vi leje af mildt trykkammer (mHBOT) og molekylær hydrogen med opsætning og vejledning fra certificeret behandler.
+                        </p>
+                        <a href="https://recoveryexpressen.dk" target="_blank" rel="noopener noreferrer" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe transition">Gå til RecoveryExpressen.dk ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= BEHANDLINGSOMRÅDER ======= -->
+        <section class="py-20 bg-[#FAF9F6] border-t border-rl-lightbg">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-xs font-semibold uppercase tracking-[0.2em] text-rl-taupe">Målrettede forløb</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-rl-darkblue mt-2">Behandlingsområder</h2>
+                    <p class="text-rl-black/75 mt-3 text-base md:text-lg">
+                        Vi arbejder med kroppens egne biologiske reparationsprocesser på tværs af genoptræning, restitution og cellulær energi.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-7 rounded-3xl border border-rl-lightbg flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Hjerne &amp; Neuro</h3>
+                            <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                                Fokus på hjernerystelse og senfølger (PCS), stroke-rehabilitering, hjernetræthed, stress og migræne.
+                            </p>
+                            <ul class="space-y-2 text-sm text-rl-black/80 mb-6">
+                                <li>✓ Understøtter ilttilførsel til væv med nedsat cirkulation</li>
+                                <li>✓ Hurtig opstart fra dag til dag uden lang ventetid</li>
+                            </ul>
+                        </div>
+                        <a href="behandlinger.html#hjerne-neuro" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe">Udforsk Hjerne &amp; Neuro &rarr;</a>
+                    </div>
+
+                    <div class="bg-white p-7 rounded-3xl border border-rl-lightbg flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Kirurgi &amp; Sårheling</h3>
+                            <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                                Støtte til post-operativ genopretning, sårheling og vævsrespons efter kirurgiske indgreb.
+                            </p>
+                            <ul class="space-y-2 text-sm text-rl-black/80 mb-6">
+                                <li>✓ Fokus på ødem, vævsilning og helingsmiljø</li>
+                                <li>✓ Mulighed for lægefaglig screening før opstart</li>
+                            </ul>
+                        </div>
+                        <a href="behandlinger.html#kirurgi-saarheling" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe">Udforsk Kirurgi &amp; Sårheling &rarr;</a>
+                    </div>
+
+                    <div class="bg-white p-7 rounded-3xl border border-rl-lightbg flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Smerter, Nerve &amp; Inflammation</h3>
+                            <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                                Målrettet forløb ved piskesmæld, nerveskader, diskusprolaps og kroniske inflammatoriske belastninger.
+                            </p>
+                            <ul class="space-y-2 text-sm text-rl-black/80 mb-6">
+                                <li>✓ Skånsom, ikke-invasiv støtte til væv og nerver</li>
+                                <li>✓ Individuelt tilpasset antal sessioner og hyppighed</li>
+                            </ul>
+                        </div>
+                        <a href="behandlinger.html#smerter-inflammation" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe">Udforsk Smerter &amp; Inflammation &rarr;</a>
+                    </div>
+
+                    <div class="bg-white p-7 rounded-3xl border border-rl-lightbg flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Longevity, Energi &amp; Biohacking</h3>
+                            <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                                Cellulær energi og restitution – kombineret med rødlys (PBM) og molekylær hydrogen som tilvalg.
+                            </p>
+                            <ul class="space-y-2 text-sm text-rl-black/80 mb-6">
+                                <li>✓ Signatur Protokol (105 min.) med tre teknologier</li>
+                                <li>✓ Understøtter mental klarhed og overskud i hverdagen</li>
+                            </ul>
+                        </div>
+                        <a href="behandlinger.html#longevity-energi" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe">Udforsk Longevity &amp; Energi &rarr;</a>
+                    </div>
+
+                    <div class="bg-white p-7 rounded-3xl border border-rl-lightbg flex flex-col justify-between lg:col-span-2">
+                        <div class="grid md:grid-cols-2 gap-6 items-center">
+                            <div>
+                                <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Sport &amp; Restitution</h3>
+                                <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                                    Til atleter og motionister, der ønsker hurtig restitution efter hård belastning eller skade, samt til sportsklubber og erhverv via vores B2B-enhed.
+                                </p>
+                                <div class="flex flex-wrap gap-4">
+                                    <a href="behandlinger.html#sport-restitution" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe">Læs om Sport &amp; Restitution &rarr;</a>
+                                    <a href="https://b2b.rechargelife.dk" target="_blank" rel="noopener noreferrer" class="text-rl-taupe font-semibold text-sm hover:text-rl-darkblue">Erhverv &amp; klubber (B2B) ↗</a>
+                                </div>
+                            </div>
+                            <div class="bg-rl-lightbg/30 p-5 rounded-2xl border border-rl-lightbg text-sm text-rl-black/80">
+                                <p class="font-semibold text-rl-darkblue mb-2">Vigtigt at vide om klinisk tryk:</p>
+                                <p class="leading-relaxed">
+                                    Hos RechargeLife anvender vi hårde, kliniske trykkamre ved 2.0 ATA med ilt – til forskel fra trykket i hospitalers medicinske hyperbariske kamre (2–6 ATA) ved akutte sygdomme eller dykkerulykker. HBOT erstatter ikke lægelig behandling.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SÅDAN FOREGÅR EN BEHANDLING & FØRSTE BESØG ======= -->
+        <section class="py-20 bg-white border-t border-rl-lightbg">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="text-center mb-12">
+                    <span class="text-xs font-semibold uppercase tracking-[0.2em] text-rl-taupe">Tryghed &amp; forberedelse</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-rl-darkblue mt-2">Sådan foregår dit besøg</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-rl-lightbg/20 p-7 rounded-3xl border border-rl-lightbg">
+                        <h3 class="font-serif text-xl text-rl-darkblue font-semibold mb-2">Før behandlingen</h3>
+                        <p class="text-sm text-rl-black/80 leading-relaxed">
+                            Vi opretter journal, sikrer at du kan modtage behandling, og gennemgår trykudligning og dykkersignaler (👌 OK, 👍 op, 👎 ned, 👈👉 peg på det, du vil gøre opmærksom på).
+                        </p>
+                    </div>
+                    <div class="bg-rl-lightbg/20 p-7 rounded-3xl border border-rl-lightbg">
+                        <h3 class="font-serif text-xl text-rl-darkblue font-semibold mb-2">Under behandlingen</h3>
+                        <p class="text-sm text-rl-black/80 leading-relaxed">
+                            Trykket øges gradvist, mens du indånder ilt i en afslappet position under fuldt opsyn af certificeret personale. Du kan bl.a. trykudligne ved at synke, gabe eller tygge tyggegummi.
+                        </p>
+                    </div>
+                    <div class="bg-rl-lightbg/20 p-7 rounded-3xl border border-rl-lightbg">
+                        <h3 class="font-serif text-xl text-rl-darkblue font-semibold mb-2">Efter behandlingen</h3>
+                        <p class="text-sm text-rl-black/80 leading-relaxed">
+                            Trykket sænkes roligt, du skifter tilbage til dit eget tøj, får vand og kan planlægge næste session ud fra dine mål og respons.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-[#FAF9F6] p-8 rounded-3xl border border-rl-lightbg">
+                    <h3 class="font-serif text-2xl text-rl-darkblue mb-4">Praktisk tjekliste før din session</h3>
+                    <ul class="grid sm:grid-cols-2 gap-3 text-sm text-rl-black/85">
+                        <li class="flex items-start gap-2"><span class="text-rl-darkblue font-bold">✓</span> <span><strong>Ankomst:</strong> Mød gerne 10 minutter før din aftalte tid.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-rl-darkblue font-bold">✓</span> <span><strong>Tøj:</strong> Vi stiller antistatisk klinikbeklædning til rådighed.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-rl-darkblue font-bold">✓</span> <span><strong>Væske &amp; toilet:</strong> Kom velhydreret, og benyt gerne toilettet før start.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-rl-darkblue font-bold">✓</span> <span><strong>Mad, kaffe &amp; dufte:</strong> Undgå store måltider og kaffe lige før start samt parfume.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="bg-rl-darkblue text-white pt-16 pb-12 border-t border-white/10">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 mb-12 text-xs text-rl-lightbg/80 leading-relaxed">
+                <strong class="text-white uppercase tracking-wider">Vigtig information:</strong> Hyperbar iltbehandling (HBOT) hos RechargeLife er ikke en medicinsk behandling og erstatter ikke lægelig rådgivning eller behandling. Trykket i vores kammer ved 2.0 ATA svarer ikke til trykket i hospitalers medicinske trykkamre (2–6 ATA) ved akutte sygdomme eller dykkerulykker.
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm text-rl-lightbg/80 font-light mb-12">
+                <div>
+                    <h4 class="font-serif text-lg mb-4 text-white uppercase tracking-widest">RechargeLife</h4>
+                    <ul class="space-y-3">
+                        <li><a href="om-os.html" class="hover:text-white transition">Om os &amp; Kontakt</a></li>
+                        <li><a href="hvad-er-hbot.html" class="hover:text-white transition">Hvad er HBOT?</a></li>
+                        <li><a href="priser.html" class="hover:text-white transition">Priser &amp; Booking</a></li>
+                        <li><a href="https://recoveryexpressen.dk" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">RecoveryExpressen (Leje) ↗</a></li>
+                        <li><a href="https://b2b.rechargelife.dk" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Erhverv &amp; B2B ↗</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-lg mb-4 text-white uppercase tracking-widest">Behandlinger</h4>
+                    <ul class="space-y-3">
+                        <li><a href="behandlinger.html#kirurgi-saarheling" class="hover:text-white transition">Kirurgi &amp; Sårheling</a></li>
+                        <li><a href="behandlinger.html#hjerne-neuro" class="hover:text-white transition">Hjerne &amp; Neuro</a></li>
+                        <li><a href="behandlinger.html#smerter-inflammation" class="hover:text-white transition">Smerter, Nerve &amp; Inflammation</a></li>
+                        <li><a href="behandlinger.html#longevity-energi" class="hover:text-white transition">Longevity, Energi &amp; Biohacking</a></li>
+                        <li><a href="behandlinger.html#sport-restitution" class="hover:text-white transition">Sport &amp; Restitution</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-lg mb-4 text-white uppercase tracking-widest">Klinik &amp; Vilkår</h4>
+                    <ul class="space-y-3">
+                        <li>Baldersvej 9, 3400 Hillerød</li>
+                        <li><a href="tel:+4531443772" class="hover:text-white transition">+45 31 44 37 72</a></li>
+                        <li><a href="mailto:kontakt@rechargelife.dk" class="hover:text-white transition">kontakt@rechargelife.dk</a></li>
+                        <li><a href="privatlivspolitik.html" class="hover:text-white transition">Privatlivspolitik</a></li>
+                        <li><a href="cookie.html" class="hover:text-white transition">Cookie-politik</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-lg mb-4 text-white uppercase tracking-widest">Nyhedsbrev</h4>
+                    <p class="mb-4 text-xs leading-relaxed">Få nyt om åbningstider, forløb og formidling fra klinikken i Hillerød.</p>
+                    <form action="https://formspree.io/f/mnppkeeq" method="POST" class="flex items-end pb-2 border-b border-rl-lightbg/30">
+                        <input type="email" name="Nyhedsbrev_Email" maxlength="100" placeholder="Din e-mail" required class="bg-transparent w-full text-white placeholder-rl-lightbg/50 focus:outline-none font-light text-sm">
+                        <button type="submit" class="uppercase text-xs font-semibold tracking-wider hover:text-white transition shrink-0">Tilmeld</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/10 text-xs text-rl-lightbg/60 flex flex-col sm:flex-row justify-between gap-2">
+                <span>&copy; 2026 Re Charge Life ApS (RechargeLife). CVR: 45890589.</span>
+                <span>Baldersvej 9, 3400 Hillerød</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
