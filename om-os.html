@@ -287,7 +287,54 @@
                 </div>
             </div>
         </section>
+        <!-- ======= TEAMET HOS RECHARGELIFE ======= -->
+        <section id="team" class="py-16 md:py-20 bg-[#FAF9F6] border-t border-rl-lightbg">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="max-w-3xl mb-12">
+                    <span class="text-xs font-semibold uppercase tracking-[0.2em] text-rl-taupe">Menneskerne bag klinikken</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-rl-darkblue mt-2">Mød teamet i Hillerød</h2>
+                    <p class="text-rl-black/80 text-base mt-3 leading-relaxed">
+                        Hos RechargeLife møder du et fast, certificeret team med fokus på sikkerhed, trykudligning og en rolig oplevelse i klinikken på Baldersvej 9.
+                    </p>
+                </div>
 
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Michael -->
+                    <div class="bg-white p-7 rounded-3xl border border-rl-lightbg flex flex-col sm:flex-row gap-6 items-start">
+                        <img
+                            src="pictures/MichaelBWJuly2026.png"
+                            alt="Michael Boye Christensen, grundlægger og CEO hos RechargeLife"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0 border border-rl-lightbg">
+                        <div class="space-y-2">
+                            <h3 class="font-serif text-2xl text-rl-darkblue">Michael Boye Christensen</h3>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-rl-taupe">
+                                Stifter &amp; CEO · Civilingeniør (DTU) · IBUM Safety Director
+                            </p>
+                            <p class="text-sm text-rl-black/80 leading-relaxed">
+                                Uddannet civilingeniør i elektronik (DTU) og certificeret Intermediate Hyperbaric Technician og Hyperbaric Safety Director (IBUM). Driver RechargeLife med fokus på teknisk sikkerhed, protokoller og personlig genopbygning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Anna -->
+                    <div class="bg-white p-7 rounded-3xl border border-rl-lightbg flex flex-col sm:flex-row gap-6 items-start">
+                        <img
+                            src="pictures/Anna.jpg"
+                            alt="Anna Nyengaard Hertel, certificeret HBOT-operatør hos RechargeLife"
+                            class="w-28 h-28 rounded-2xl object-cover shrink-0 border border-rl-lightbg">
+                        <div class="space-y-2">
+                            <h3 class="font-serif text-2xl text-rl-darkblue">Anna Nyengaard Hertel</h3>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-rl-taupe">
+                                Certificeret HBOT-operatør (IBUM) · Sundhedsfaglig baggrund
+                            </p>
+                            <p class="text-sm text-rl-black/80 leading-relaxed">
+                                IBUM-certificeret operatør med baggrund som jordemoder, som guider klienter trygt gennem forberedelse, trykudligning og sessioner i klinikken.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- ======= KONTAKT & FORMULAR ======= -->
         <section id="kontakt" class="py-16 md:py-20 bg-white border-t border-rl-lightbg">
             <div class="container mx-auto px-6 max-w-6xl">
@@ -453,5 +500,110 @@
             }
         });
     </script>
+    <!-- ======= FAST KONTAKT-KNAP NEDERST TIL HØJRE ======= -->
+    <button id="open-contact-modal" type="button" class="fixed bottom-5 right-5 z-40 bg-rl-darkblue hover:bg-rl-black text-white font-serif text-xs sm:text-sm uppercase tracking-widest px-6 py-3.5 rounded-full shadow-xl border border-white/15 transition">
+        Kontakt os
+    </button>
+
+    <!-- ======= KONTAKT POP-UP (MODAL) ======= -->
+    <div id="contact-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-sm p-4">
+        <div id="contact-modal-content" class="bg-[#FAF9F6] w-full max-w-lg rounded-3xl shadow-2xl border border-rl-lightbg p-8 relative transform scale-95 transition-transform duration-300">
+            <button id="close-contact-modal" type="button" class="absolute top-5 right-5 text-rl-black/60 hover:text-rl-black" aria-label="Luk kontaktvindue">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+
+            <span class="text-xs font-semibold uppercase tracking-[0.2em] text-rl-taupe block mb-2">Hurtig kontakt</span>
+            <h3 class="font-serif text-3xl text-rl-darkblue mb-2">Har du et spørgsmål?</h3>
+            <p class="text-sm text-rl-black/75 mb-6">Skriv til os i Hillerød – vi vender tilbage hurtigst muligt.</p>
+
+            <form id="popup-contact-form" action="https://formspree.io/f/xkjjldqw" method="POST" class="space-y-4">
+                <input type="hidden" name="_subject" value="Henvendelse fra kontakt-pop-up (rechargelife.dk)">
+                <input type="hidden" name="Side_Kilde" value="Om os og kontakt (pop-up)">
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-1">Navn</label>
+                    <input type="text" name="Navn" maxlength="100" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-2.5 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-1">Telefon</label>
+                        <input type="tel" name="Telefon" maxlength="20" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-2.5 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-1">E-mail</label>
+                        <input type="email" name="Email" maxlength="100" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-2.5 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-1">Besked</label>
+                    <textarea name="Kommentar" rows="3" maxlength="1000" required placeholder="Skriv dit spørgsmål her..." class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-2.5 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-rl-darkblue hover:bg-rl-black text-white font-semibold py-3.5 rounded-full text-sm transition">
+                    Send besked
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openBtn = document.getElementById('open-contact-modal');
+            const closeBtn = document.getElementById('close-contact-modal');
+            const modal = document.getElementById('contact-modal');
+            const modalContent = document.getElementById('contact-modal-content');
+            const popupForm = document.getElementById('popup-contact-form');
+
+            const closeModal = () => {
+                if (!modal || !modalContent) return;
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+            };
+
+            if (openBtn && modal && modalContent) {
+                openBtn.addEventListener('click', () => {
+                    modal.classList.remove('opacity-0', 'pointer-events-none');
+                    modalContent.classList.remove('scale-95');
+                    modalContent.classList.add('scale-100');
+                });
+            }
+            if (closeBtn) closeBtn.addEventListener('click', closeModal);
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) closeModal();
+                });
+            }
+
+            if (popupForm) {
+                popupForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const btn = popupForm.querySelector('button[type="submit"]');
+                    const orig = btn.textContent;
+                    btn.disabled = true;
+                    btn.textContent = 'Sender...';
+                    try {
+                        const res = await fetch(popupForm.action, {
+                            method: popupForm.method,
+                            body: new FormData(popupForm),
+                            headers: { 'Accept': 'application/json' }
+                        });
+                        if (res.ok) {
+                            popupForm.innerHTML = '<div class="p-5 bg-white rounded-2xl border border-rl-lightbg text-rl-darkblue"><h4 class="font-serif text-2xl mb-1">Tak for din besked</h4><p class="text-sm text-rl-black/80">Vi vender tilbage hurtigst muligt.</p></div>';
+                            setTimeout(closeModal, 2500);
+                        } else {
+                            btn.disabled = false;
+                            btn.textContent = orig;
+                        }
+                    } catch (_) {
+                        btn.disabled = false;
+                        btn.textContent = orig;
+                    }
+                });
+            }
+        });
+    </script>    
 </body>
 </html>
