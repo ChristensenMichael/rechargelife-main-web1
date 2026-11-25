@@ -8,7 +8,7 @@
     <!-- 1. PRIMÆRE META-TAGS (Søgemaskiner)        -->
     <!-- ========================================== -->
     <title>Hyperbar iltbehandling i Hillerød (2.0 ATA) | RechargeLife</title>
-    <meta name="description" content="Oplev klinisk hyperbar iltbehandling (HBOT) ved 2.0 ATA i CE-mærket og PED-godkendt trykkammer hos RechargeLife i Hillerød. Hurtig opstart, lægefaglig tilknytning og certificeret drift.">
+    <meta name="description" content="Hyperbar iltbehandling (HBOT) ved 2.0 ATA i CE-mærket og PED-godkendt trykkammer hos RechargeLife i Hillerød. Certificeret drift, mulighed for lægefaglig screening og hurtig opstart.">
 
     <!-- Canonical tag -->
     <link rel="canonical" href="https://rechargelife.dk/">
@@ -17,56 +17,63 @@
     <!-- 2. OPEN GRAPH META-TAGS (LinkedIn/Facebook)-->
     <!-- ========================================== -->
     <meta property="og:title" content="Hyperbar iltbehandling i Hillerød (2.0 ATA) | RechargeLife">
-    <meta property="og:description" content="Klinisk hyperbar iltbehandling (HBOT) ved 2.0 ATA i Hillerød med certificeret drift, lægefaglig screening og mulighed for hjemmeleje via RecoveryExpressen.">
+    <meta property="og:description" content="Hyperbar iltbehandling (HBOT) ved 2.0 ATA i Hillerød med certificeret drift, lægefaglig screening ved behov og mulighed for hjemmeleje via RecoveryExpressen.">
     <meta property="og:url" content="https://rechargelife.dk/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="RechargeLife - beyond living">
     <meta property="og:image" content="https://rechargelife.dk/pictures/RechargeLifeKlinik.png">
 
     <!-- ========================================== -->
-    <!-- 3. JSON-LD SCHEMA MARKUP (Google Rich Snippets) -->
+    <!-- 3. JSON-LD SCHEMA MARKUP (SEO & AIO)       -->
     <!-- ========================================== -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@graph": [
+      "@context": "https://schema.org",
+      "@graph": [
         {
-        "@type": "Organization",
-        "@id": "https://rechargelife.dk/#organization",
-        "name": "RechargeLife",
-        "legalName": "Re Charge Life ApS",
-        "url": "https://rechargelife.dk/",
-        "logo": "https://rechargelife.dk/pictures/Recharge%20Life_Large_Transparent_Variant%201.png",
-        "taxID": "45890589",
-        "address": {
+          "@type": "MedicalBusiness",
+          "@id": "https://rechargelife.dk/#organization",
+          "name": "RechargeLife",
+          "legalName": "Re Charge Life ApS",
+          "url": "https://rechargelife.dk/",
+          "logo": "https://rechargelife.dk/pictures/Recharge%20Life_Large_Transparent_Variant%201.png",
+          "image": "https://rechargelife.dk/pictures/RechargeLifeKlinik.png",
+          "taxID": "45890589",
+          "telephone": "+4531443772",
+          "email": "kontakt@rechargelife.dk",
+          "address": {
             "@type": "PostalAddress",
             "streetAddress": "Baldersvej 9",
             "addressLocality": "Hillerød",
             "postalCode": "3400",
             "addressCountry": "DK"
-        },
-        "contactPoint": {
+          },
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Hillerød og Nordsjælland"
+          },
+          "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+4531443772",
             "email": "kontakt@rechargelife.dk",
             "contactType": "Kundeservice"
-        }
+          }
         },
         {
-        "@type": "Service",
-        "@id": "https://rechargelife.dk/#hbot-service",
-        "name": "Hyperbar iltbehandling (HBOT) i Hillerød",
-        "serviceType": "Hyperbar iltbehandling og restitution ved 2.0 ATA",
-        "provider": {
+          "@type": "Service",
+          "@id": "https://rechargelife.dk/#hbot-service",
+          "name": "Hyperbar iltbehandling (HBOT) ved 2.0 ATA i Hillerød",
+          "serviceType": "Supplerende hyperbar iltbehandling og restitution ved 2.0 ATA",
+          "provider": {
             "@id": "https://rechargelife.dk/#organization"
-        },
-        "areaServed": {
+          },
+          "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Hillerød og Nordsjælland"
-        },
-        "url": "https://rechargelife.dk/"
+          },
+          "url": "https://rechargelife.dk/"
         }
-    ]
+      ]
     }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -260,12 +267,12 @@
                         Hyperbar iltbehandling (HBOT) ved 2.0 ATA i Hillerød
                     </h1>
                     <p class="text-white/90 text-lg md:text-xl font-light leading-relaxed max-w-2xl">
-                        Få adgang til klinisk hyperbar iltbehandling i et CE-mærket og PED-godkendt trykkammer ved 2.0 ATA – udført af certificeret personale med lægefaglig tilknytning og hurtig opstart fra dag til dag.
+                        Få adgang til supplerende hyperbar iltbehandling ved 2.0 ATA i et CE-mærket og PED-godkendt trykkammer i Hillerød – udført af certificeret personale med mulighed for lægefaglig screening og hurtig opstart.
                     </p>
 
                     <div class="flex flex-wrap gap-4 pt-4">
                         <a href="https://system.easypractice.net/book/rechargelife?service=277207" target="_blank" rel="noopener noreferrer" class="bg-white text-rl-darkblue font-semibold px-7 py-4 rounded-full hover:bg-rl-lightbg transition shadow-lg">
-                            Book prøvetur (200 kr.)
+                            Book prøvesession (200 kr.)
                         </a>
                         <a href="priser.html" class="bg-transparent border border-white/70 text-white font-medium px-7 py-4 rounded-full hover:bg-white/10 transition">
                             Se priser og klippekort
@@ -285,11 +292,11 @@
                             Kom sikkert i gang i trygge rammer
                         </h2>
                         <p class="text-rl-black/80 text-base leading-relaxed">
-                            Se et indblik fra klinikken i Hillerød, hvor vi gennemgår forløbet og gør klar til behandling ved 2.0 ATA. Stilbilledet indlæses først, så siden står skarpt selv ved langsom forbindelse.
+                            Vi gennemgår sikkerhed, trykudligning og egnethed før hver opstart. Stilbilledet indlæses først, så siden står skarpt selv ved langsom forbindelse.
                         </p>
                         <div class="pt-2">
                             <a href="priser.html" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe transition">
-                                Se priser, prøvetur og screening &rarr;
+                                Se priser, prøvesession og screening &rarr;
                             </a>
                         </div>
                     </div>
@@ -319,9 +326,9 @@
 
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="bg-rl-lightbg/30 p-7 rounded-3xl border border-rl-lightbg">
-                        <h3 class="font-serif text-2xl text-rl-darkblue mb-3">1. Klinisk screening (efter behov)</h3>
+                        <h3 class="font-serif text-2xl text-rl-darkblue mb-3">1. Lægefaglig screening (efter behov)</h3>
                         <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
-                            Tilrettelagt i samarbejde med lægefaglige specialister for klienter med specifikke medicinske tilstande eller post-operative forløb for at afklare eventuelle kontraindikationer.
+                            Tilbydes ved behov i samarbejde med tilknyttet læge – særligt relevant ved post-operative forløb, medicin eller helbredsforhold, hvor kontraindikationer bør afklares før start.
                         </p>
                         <a href="priser.html" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe transition">Læs mere om screening &rarr;</a>
                     </div>
@@ -337,7 +344,7 @@
                     <div class="bg-rl-lightbg/30 p-7 rounded-3xl border border-rl-lightbg">
                         <h3 class="font-serif text-2xl text-rl-darkblue mb-3">3. Hjemmeleje via RecoveryExpressen</h3>
                         <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
-                            Ønsker du at fortsætte derhjemme, tilbyder vi leje af mildt trykkammer (mHBOT) og molekylær hydrogen med opsætning og vejledning fra certificeret behandler.
+                            Ønsker du at fortsætte derhjemme, tilbyder vi leje af mildt trykkammer (mHBOT) og molekylær hydrogen med opsætning og vejledning fra certificeret operatør.
                         </p>
                         <a href="https://recoveryexpressen.dk" target="_blank" rel="noopener noreferrer" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe transition">Gå til RecoveryExpressen.dk ↗</a>
                     </div>
@@ -352,7 +359,7 @@
                     <span class="text-xs font-semibold uppercase tracking-[0.2em] text-rl-taupe">Målrettede forløb</span>
                     <h2 class="font-serif text-3xl md:text-5xl text-rl-darkblue mt-2">Behandlingsområder</h2>
                     <p class="text-rl-black/75 mt-3 text-base md:text-lg">
-                        Vi arbejder med kroppens egne biologiske reparationsprocesser på tværs af genoptræning, restitution og cellulær energi.
+                        Vi arbejder med kroppens egne biologiske reparationsprocesser som supplement til øvrig pleje, genoptræning og restitution.
                     </p>
                 </div>
 
@@ -375,7 +382,7 @@
                         <div>
                             <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Kirurgi og sårheling</h3>
                             <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
-                                Støtte til post-operativ genopretning, sårheling og vævsrespons efter kirurgiske indgreb.
+                                Supplerende støtte til post-operativ genopretning, sårheling og vævsrespons efter kirurgiske indgreb.
                             </p>
                             <ul class="space-y-2 text-sm text-rl-black/80 mb-6">
                                 <li>✓ Fokus på ødem, vævsiltning og helingsmiljø</li>
@@ -389,7 +396,7 @@
                         <div>
                             <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Smerter, nerve og inflammation</h3>
                             <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
-                                Målrettet forløb ved piskesmæld, nerveskader, diskusprolaps og kroniske inflammatoriske belastninger.
+                                Målrettet forløb ved piskesmæld, nerveskader, diskusprolaps og inflammatoriske belastninger.
                             </p>
                             <ul class="space-y-2 text-sm text-rl-black/80 mb-6">
                                 <li>✓ Skånsom, ikke-invasiv støtte til væv og nerver</li>
@@ -414,25 +421,29 @@
                     </div>
 
                     <div class="bg-white p-7 rounded-3xl border border-rl-lightbg flex flex-col justify-between lg:col-span-2">
-                        <div class="grid md:grid-cols-2 gap-6 items-center">
-                            <div>
-                                <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Sport og restitution</h3>
-                                <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
-                                    Til atleter og motionister, der ønsker hurtig restitution efter hård belastning eller skade, samt til sportsklubber og erhverv via vores B2B-enhed.
-                                </p>
-                                <div class="flex flex-wrap gap-4">
-                                    <a href="behandlinger.html#sport-restitution" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe">Læs om sport og restitution &rarr;</a>
-                                    <a href="https://b2b.rechargelife.dk" target="_blank" rel="noopener noreferrer" class="text-rl-taupe font-semibold text-sm hover:text-rl-darkblue">Erhverv og klubber (B2B) ↗</a>
-                                </div>
-                            </div>
-                            <div class="bg-rl-lightbg/30 p-5 rounded-2xl border border-rl-lightbg text-sm text-rl-black/80">
-                                <p class="font-semibold text-rl-darkblue mb-2">Vigtigt at vide om klinisk tryk:</p>
-                                <p class="leading-relaxed">
-                                    Hos RechargeLife anvender vi hårde, kliniske trykkamre ved 2.0 ATA med ilt – til forskel fra trykket i hospitalers medicinske hyperbariske kamre (2–6 ATA) ved akutte sygdomme eller dykkerulykker. HBOT erstatter ikke lægelig behandling.
-                                </p>
-                            </div>
+                        <div>
+                            <h3 class="font-serif text-2xl text-rl-darkblue mb-3">Sport og restitution</h3>
+                            <p class="text-sm text-rl-black/80 leading-relaxed mb-4">
+                                Til atleter og motionister, der ønsker støtte til restitution efter belastning eller skade, samt til sportsklubber og erhverv via vores B2B-enhed.
+                            </p>
+                            <ul class="space-y-2 text-sm text-rl-black/80 mb-6">
+                                <li>✓ Understøtter hurtigere restitution og iltning efter hård belastning</li>
+                                <li>✓ I kliniske studier forbundet med forbedret aerob kapacitet (VO2AT og VO2max)</li>
+                            </ul>                            
+                        </div>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="behandlinger.html#sport-restitution" class="text-rl-darkblue font-semibold text-sm hover:text-rl-taupe">Læs om sport og restitution &rarr;</a>
+                            <a href="https://b2b.rechargelife.dk" target="_blank" rel="noopener noreferrer" class="text-rl-taupe font-semibold text-sm hover:text-rl-darkblue">Erhverv og klubber (B2B) ↗</a>
                         </div>
                     </div>
+                </div>
+
+                <!-- Fælles ramme- og sikkerhedsboks for samtlige behandlingsområder -->
+                <div class="mt-8 bg-white p-6 md:p-7 rounded-3xl border border-rl-lightbg text-sm text-rl-black/80">
+                    <p class="font-semibold text-rl-darkblue mb-1.5">Vigtigt at vide om tryk og rammer (gælder alle forløb):</p>
+                    <p class="leading-relaxed">
+                        Vi anvender CE-mærkede og PED-godkendte hårde trykkamre ved op til 2.0 ATA med ilt som supplement til øvrig pleje og genoptræning. Det erstatter ikke lægelig rådgivning eller hospitalsbehandling ved akutte sygdomme eller dykkerulykker.
+                    </p>
                 </div>
             </div>
         </section>
@@ -449,13 +460,13 @@
                     <div class="bg-rl-lightbg/20 p-7 rounded-3xl border border-rl-lightbg">
                         <h3 class="font-serif text-xl text-rl-darkblue font-semibold mb-2">Før behandlingen</h3>
                         <p class="text-sm text-rl-black/80 leading-relaxed">
-                            Vi opretter journal, sikrer at du kan modtage behandling, og gennemgår trykudligning og dykkersignaler (👌 OK, 👍 op, 👎 ned, 👈👉 peg på det, du vil gøre opmærksom på).
+                            Vi gennemgår helbreds- og sikkerhedstjek, afklarer egnethed (og lægefaglig screening ved behov) samt instruerer i trykudligning og dykkersignaler (👌 OK, 👍 op, 👎 ned, 👈👉 peg på det, du vil gøre opmærksom på).
                         </p>
                     </div>
                     <div class="bg-rl-lightbg/20 p-7 rounded-3xl border border-rl-lightbg">
                         <h3 class="font-serif text-xl text-rl-darkblue font-semibold mb-2">Under behandlingen</h3>
                         <p class="text-sm text-rl-black/80 leading-relaxed">
-                            Trykket øges gradvist, mens du indånder ilt i en afslappet position under fuldt opsyn af certificeret personale. Du kan bl.a. trykudligne ved at synke, gabe eller tygge tyggegummi.
+                            Trykket øges gradvist, mens du indånder ilt i en afslappet position under opsyn af certificeret personale. Du kan bl.a. trykudligne ved at synke, gabe eller tygge tyggegummi.
                         </p>
                     </div>
                     <div class="bg-rl-lightbg/20 p-7 rounded-3xl border border-rl-lightbg">
@@ -483,7 +494,7 @@
     <footer class="bg-rl-darkblue text-white pt-16 pb-12 border-t border-white/10">
         <div class="container mx-auto px-6 max-w-7xl">
             <div class="bg-white/5 border border-white/10 rounded-2xl p-5 mb-12 text-xs text-rl-lightbg/80 leading-relaxed">
-                <strong class="text-white uppercase tracking-wider">Vigtig information:</strong> Hyperbar iltbehandling (HBOT) hos RechargeLife er ikke en medicinsk behandling og erstatter ikke lægelig rådgivning eller behandling. Trykket i vores kammer ved 2.0 ATA svarer ikke til trykket i hospitalers medicinske trykkamre (2–6 ATA) ved akutte sygdomme eller dykkerulykker.
+                <strong class="text-white uppercase tracking-wider">Vigtig information:</strong> Hyperbar iltbehandling (HBOT) hos RechargeLife er et supplerende forløb i kamre ved op til 2.0 ATA og erstatter ikke lægelig rådgivning, diagnose eller behandling. Individuelle forløb og resultater kan variere, og sessionerne erstatter ikke hospitalsbehandling ved akutte sygdomme eller dykkerulykker. <span class="block mt-1 text-rl-lightbg/60">Senest fagligt gennemgået: november 2026.</span>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm text-rl-lightbg/80 font-light mb-12">
