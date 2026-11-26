@@ -338,30 +338,35 @@
         <!-- ======= KONTAKT & FORMULAR ======= -->
         <section id="kontakt" class="py-16 md:py-20 bg-white border-t border-rl-lightbg">
             <div class="container mx-auto px-6 max-w-6xl">
-                <div class="grid lg:grid-cols-12 gap-10 items-start">
-                    <div class="lg:col-span-5 space-y-5">
-                        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-rl-taupe">Kontakt klinikken</span>
-                        <h2 class="font-serif text-3xl md:text-4xl text-rl-darkblue">Besøg os i Hillerød eller skriv til os</h2>
-                        <p class="text-sm md:text-base text-rl-black/80 leading-relaxed">
-                            Har du spørgsmål til prøvetur, forløb, screening eller samarbejde, er du velkommen til at ringe eller sende en besked via formularen.
-                        </p>
 
-                        <div class="bg-white rounded-3xl border border-rl-lightbg shadow-sm overflow-hidden">
-                            <!-- Indlejret Google Maps-kort -->
-                            <div class="w-full h-56 bg-rl-lightbg/40 relative">
-                                <iframe
-                                    title="Kort over RechargeLife på Baldersvej 9 i Hillerød"
-                                    src="https://maps.google.com/maps?q=Baldersvej+9,+3400+Hiller%C3%B8d&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                                    class="w-full h-full border-0 grayscale-[35%] contrast-[0.95] hover:grayscale-0 transition duration-300"
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
+                <!-- Overskrift på tværs, så kort og formular starter på samme linje -->
+                <div class="max-w-2xl mb-10">
+                    <span class="text-xs font-semibold uppercase tracking-[0.2em] text-rl-taupe">Kontakt klinikken</span>
+                    <h2 class="font-serif text-3xl md:text-4xl text-rl-darkblue mt-2">Besøg os i Hillerød eller skriv til os</h2>
+                    <p class="text-sm md:text-base text-rl-black/80 mt-3 leading-relaxed">
+                        Har du spørgsmål til prøvetur, forløb, screening eller samarbejde, er du velkommen til at ringe eller sende en besked via formularen.
+                    </p>
+                </div>
 
-                            <!-- Kontaktdata samlet direkte under kortet -->
-                            <div class="p-6 space-y-2.5 text-sm text-rl-black/85">
-                                <h3 class="font-serif text-xl text-rl-darkblue">RechargeLife Hillerød</h3>
+                <!-- 2 lige brede kolonner der flugter i top og bund -->
+                <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+
+                    <!-- Venstre: Google Maps + klinikinfo -->
+                    <div class="bg-white rounded-3xl border border-rl-lightbg shadow-sm overflow-hidden flex flex-col">
+                        <div class="w-full h-72 bg-rl-lightbg/40 relative">
+                            <iframe
+                                title="Kort over RechargeLife på Baldersvej 9 i Hillerød"
+                                src="https://maps.google.com/maps?q=Baldersvej+9,+3400+Hiller%C3%B8d&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                class="w-full h-full border-0 grayscale-[35%] contrast-[0.95] hover:grayscale-0 transition duration-300"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="p-7 space-y-3 text-sm text-rl-black/85 flex-grow flex flex-col justify-between">
+                            <div class="space-y-2.5">
+                                <h3 class="font-serif text-2xl text-rl-darkblue">RechargeLife Hillerød</h3>
                                 <p class="leading-relaxed">
                                     Baldersvej 9<br>
                                     3400 Hillerød
@@ -373,57 +378,67 @@
                                 <p class="text-xs text-rl-taupe">
                                     CVR: 45890589 (Re Charge Life ApS) · Gratis parkering og god plads
                                 </p>
-                                <div class="pt-2">
-                                    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Baldersvej+9,+3400+Hiller%C3%B8d" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-rl-darkblue text-white font-semibold px-4 py-2.5 rounded-full text-xs hover:bg-rl-black transition">
-                                        Åbn rutevejledning i Google Maps ↗
-                                    </a>
-                                </div>
                             </div>
-                        </div>
-                        <div class="flex flex-wrap gap-3">
-                            <a href="https://system.easypractice.net/book/rechargelife" target="_blank" rel="noopener noreferrer" class="bg-rl-darkblue text-white font-semibold px-5 py-3 rounded-full text-sm hover:bg-rl-black transition">
-                                Book tid online
-                            </a>
-                            <a href="priser.html" class="border border-rl-darkblue text-rl-darkblue font-semibold px-5 py-3 rounded-full text-sm hover:bg-rl-lightbg/40 transition">
-                                Se priser
-                            </a>
+
+                            <div class="pt-4">
+                                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Baldersvej+9,+3400+Hiller%C3%B8d" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-rl-darkblue text-white font-semibold px-5 py-2.5 rounded-full text-xs hover:bg-rl-black transition">
+                                    Åbn rutevejledning i Google Maps ↗
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="lg:col-span-7 bg-[#FAF9F6] p-8 md:p-10 rounded-3xl border border-rl-lightbg">
-                        <h3 class="font-serif text-2xl md:text-3xl text-rl-darkblue mb-2">Send en besked</h3>
-                        <p class="text-sm text-rl-black/70 mb-6">Vi vender tilbage hurtigst muligt.</p>
+                    <!-- Højre: Formular + Book tid / Se priser -->
+                    <div class="bg-[#FAF9F6] p-8 md:p-10 rounded-3xl border border-rl-lightbg flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl md:text-3xl text-rl-darkblue mb-2">Send en besked</h3>
+                            <p class="text-sm text-rl-black/70 mb-6">Vi vender tilbage hurtigst muligt.</p>
 
-                        <form id="contact-form" action="https://formspree.io/f/xkjjldqw" method="POST" class="space-y-5">
-                            <input type="hidden" name="_subject" value="Henvendelse fra rechargelife.dk (Om os og kontakt)">
-                            <input type="hidden" name="Side_Kilde" value="Om os og kontakt (om-os.html)">
+                            <form id="contact-form" action="https://formspree.io/f/xkjjldqw" method="POST" class="space-y-5">
+                                <input type="hidden" name="_subject" value="Henvendelse fra rechargelife.dk (Om os og kontakt)">
+                                <input type="hidden" name="Side_Kilde" value="Om os og kontakt (om-os.html)">
 
-                            <div class="grid sm:grid-cols-2 gap-5">
-                                <div>
-                                    <label for="navn" class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-2">Navn</label>
-                                    <input id="navn" type="text" name="Navn" maxlength="100" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-3 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
+                                <div class="grid sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label for="navn" class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-2">Navn</label>
+                                        <input id="navn" type="text" name="Navn" maxlength="100" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-3 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
+                                    </div>
+                                    <div>
+                                        <label for="telefon" class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-2">Telefon</label>
+                                        <input id="telefon" type="tel" name="Telefon" maxlength="20" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-3 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
+                                    </div>
                                 </div>
+
                                 <div>
-                                    <label for="telefon" class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-2">Telefon</label>
-                                    <input id="telefon" type="tel" name="Telefon" maxlength="20" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-3 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
+                                    <label for="email" class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-2">E-mail</label>
+                                    <input id="email" type="email" name="Email" maxlength="100" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-3 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
                                 </div>
-                            </div>
 
-                            <div>
-                                <label for="email" class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-2">E-mail</label>
-                                <input id="email" type="email" name="Email" maxlength="100" required class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-3 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue">
-                            </div>
+                                <div>
+                                    <label for="kommentar" class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-2">Besked eller spørgsmål</label>
+                                    <textarea id="kommentar" name="Kommentar" rows="4" maxlength="1000" placeholder="Skriv dit spørgsmål her..." class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-3 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue"></textarea>
+                                </div>
 
-                            <div>
-                                <label for="kommentar" class="block text-xs font-bold uppercase tracking-wider text-rl-black/70 mb-2">Besked eller spørgsmål</label>
-                                <textarea id="kommentar" name="Kommentar" rows="4" maxlength="1000" placeholder="Skriv dit spørgsmål her..." class="w-full bg-white border border-rl-lightbg rounded-xl px-4 py-3 text-sm text-rl-black focus:outline-none focus:border-rl-darkblue"></textarea>
-                            </div>
+                                <button type="submit" class="w-full sm:w-auto bg-rl-darkblue text-white font-semibold px-8 py-3.5 rounded-full text-sm hover:bg-rl-black transition">
+                                    Send besked
+                                </button>
+                            </form>
+                        </div>
 
-                            <button type="submit" class="w-full sm:w-auto bg-rl-darkblue text-white font-semibold px-8 py-3.5 rounded-full text-sm hover:bg-rl-black transition">
-                                Send besked
-                            </button>
-                        </form>
+                        <!-- Genvej til booking og priser under formularen -->
+                        <div class="mt-8 pt-6 border-t border-rl-lightbg flex flex-wrap items-center justify-between gap-4">
+                            <span class="text-xs text-rl-taupe">Klar til at bestille?</span>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://system.easypractice.net/book/rechargelife" target="_blank" rel="noopener noreferrer" class="bg-rl-darkblue text-white font-semibold px-5 py-2.5 rounded-full text-xs hover:bg-rl-black transition">
+                                    Book tid online
+                                </a>
+                                <a href="priser.html" class="border border-rl-darkblue text-rl-darkblue font-semibold px-5 py-2.5 rounded-full text-xs hover:bg-white transition">
+                                    Se priser
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
